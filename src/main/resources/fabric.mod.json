@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "cheesed",
+	"version": "${version}",
+	"name": "Cheesed to Meet You",
+	"description": "a simple mod about cheese and mice",
+	"authors": [
+		"SystemLoading"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL-3.0-only",
+	"icon": "assets/cheesed/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "io.github.systemloading.cheesed.Cheesed"
+		],
+		"client": [
+			"io.github.systemloading.cheesed.CheesedClient"
+		]
+	},
+	"mixins": [
+		"cheesed.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.2",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
